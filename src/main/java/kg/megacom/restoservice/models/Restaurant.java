@@ -16,8 +16,9 @@ public class Restaurant {
     private Long id;
     private String  name;
     private String address;
+    private String desc;
     private double lat;
-       private double lon;
+    private double lon;
     private boolean active;
     private String logo;
     @OneToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL)

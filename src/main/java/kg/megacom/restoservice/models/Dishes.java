@@ -16,4 +16,8 @@ public class Dishes {
     private double size;
     private String img;
 
+    @ManyToOne
+    @JoinColumn(name = "menu_id")
+    private Menu menu;
+
 }
